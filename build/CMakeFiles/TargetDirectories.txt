@@ -1,0 +1,10 @@
+C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/a1_base.dir
+C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/INSTALL.dir
+C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/libs/glfw/CMakeFiles/uninstall.dir
+C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/libs/glfw/CMakeFiles/INSTALL.dir
+C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/libs/glfw/CMakeFiles/ALL_BUILD.dir
+C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/libs/glfw/src/CMakeFiles/update_mappings.dir
+C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/libs/glfw/src/CMakeFiles/glfw.dir
+C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/libs/glfw/src/CMakeFiles/INSTALL.dir

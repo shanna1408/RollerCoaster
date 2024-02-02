@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\build\CMakeFiles\2d7d29f837547289cc3d34d092e6e49b\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\glfw\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\build\libs\glfw\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E8470E07-AA98-37C6-87A2-A6C8A8695052}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

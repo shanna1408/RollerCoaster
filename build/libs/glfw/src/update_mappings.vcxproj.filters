@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\build\CMakeFiles\279b710f923f349aaedbde7dfc2ed3e1\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\glfw\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\glfw\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\glfw\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\build\libs\glfw\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E8470E07-AA98-37C6-87A2-A6C8A8695052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{87A542AC-C2FB-3ECD-A0D6-4FD7BD58DC15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

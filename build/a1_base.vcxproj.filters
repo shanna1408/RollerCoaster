@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\givio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\givr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\imgui\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\imgui\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\imgui\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\imgui\imgui_impl_glfw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\imgui\imgui_impl_opengl3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\imgui\imgui_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\imgui\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\panel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\picking_controls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\arc_length_parameterize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\curve_file_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\hermite_curve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\imgui_panel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\speed_profile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\command_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\givio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\givr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\imgui\imconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\imgui\imgui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\imgui\imgui_impl_glfw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\imgui\imgui_impl_opengl3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\imgui\imgui_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\imgui\imstb_rectpack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\imgui\imstb_textedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\imgui\imstb_truetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\panel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\picking_controls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\libs\turntable_controls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\arc_length_parameterize.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\curve_file_io.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\hermite_curve.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\imgui_panel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\speed_profile.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{87A542AC-C2FB-3ECD-A0D6-4FD7BD58DC15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{45FE30C2-2A15-3702-800A-CDEBCF182986}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

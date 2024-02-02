@@ -1,0 +1,10 @@
+^C:\USERS\PRINC\ONEDRIVE\DESKTOP\SCHOOL\CPSC 687\ASSIGNMENT 1 - BOILERPLATE\BUILD\CMAKEFILES\C518A550E7054FFB4F24982270AB6B53\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate" "-BC:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/a1_base.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
