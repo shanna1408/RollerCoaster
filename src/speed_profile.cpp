@@ -10,6 +10,8 @@ namespace modelling {
 
     float SpeedProfile::getH() const { return H; }
 
+    float SpeedProfile::getVmin() const { return vmin; }
+
     float SpeedProfile::liftingPhase() const { 
         std::cout << "lifting" << std::endl;
         return vmin; }
@@ -23,7 +25,7 @@ namespace modelling {
         std::cout << "deceleration" << std::endl;
         float ddec = arcLength - s;
         float Ldec = arcLength * 0.05;
-        float v = (vdec - vmin) * (ddec / Ldec) + vmin;
+        float v = (vdec - 0) * (ddec / Ldec);
         return v;
     }
 

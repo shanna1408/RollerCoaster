@@ -10,7 +10,7 @@ namespace modelling {
 		    explicit SpeedProfile(float h, float s, float l);
 
             float getH() const;
-
+            float getVmin() const;
             float getSpeed(float s, glm::vec3 curve_p, float v);
 
         private:

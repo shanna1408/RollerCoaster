@@ -8,6 +8,8 @@
 #include "curve_file_io.hpp"
 #include "hermite_curve.hpp"
 #include "speed_profile.hpp"
+#include <ctime>
+
 
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/transform.hpp>
@@ -106,13 +108,15 @@ int main(void) {
 	RenderContext track_render = createRenderable(track_geometry, track_style);
 
 	// Cart
-	Mesh cart_geometry = Mesh(Filename("../models/monkey.obj"));
+	Mesh cart_geometry = Mesh(Filename("../models/cart.obj"));
 	PhongStyle cart_style = Phong(Colour(1.f, 1.f, 0.f), LightPosition(100.f, 100.f, 100.f));
 	InstancedRenderContext cart_renders = createInstancedRenderable(cart_geometry, cart_style);
 	
 	size_t cp_index = 0;
 	float s = 0.f;
-	float v = 0.f;
+	float v = speed.getVmin();
+	bool stopped = false;
+	time_t stopped_time;
 
 	// main loop
 	// To load a model place it in the "models" directory, build, then type "./models/[name].obj" and press load.
@@ -163,8 +167,26 @@ int main(void) {
 		auto M = scale(translate(mat4f{ 1.f }, curve_p), vec3f{ 0.75 });
 		addInstance(cart_renders, M);
 
-		v = speed.getSpeed(s, curve_p, v);
+		if (v<0.05 && !stopped) {
+			std::cout << "Stopping cart" << std::endl;
+			v = 0;
+			stopped_time = time(0);
+			std::cout << "stop time: " << stopped_time << std::endl;
+
+			stopped = true;
+		}
+
 		std::cout << "v:" << v << '\n' << std::endl;
+
+		if (stopped){
+			if ((time(0)-stopped_time)>=1.5) {
+				std::cout << "Starting cart" << std::endl;
+				stopped =  false;
+				v = speed.getVmin();
+			}
+		} else {
+			v = speed.getSpeed(s, curve_p, v);
+		}
 
 		// render
 		auto color = imgui_panel::clear_color;
