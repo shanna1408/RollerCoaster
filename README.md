@@ -3,7 +3,7 @@
 
 ## Instructions:
 
-* To run this program, click the a1_base.exe inside of the build/Debug folder.
+* To run this program, click the a1_base.exe inside of the build/Debug folder (Compiled for Windows 11 using Visual Studio C++ compiler).
 
 * To start the animation, click 'Play'. Once the animation has started, a 'Pause' option will appear.
 

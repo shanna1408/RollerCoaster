@@ -107,7 +107,7 @@ int main(void) {
 	// RenderContext track_render = createRenderable(track_geometry, track_style);
 
 	// Cart
-	Mesh cart_geometry = Mesh(Filename("../models/cart.obj"));
+	Mesh cart_geometry = Mesh(Filename("../models/monkey.obj"));
 	PhongStyle cart_style = Phong(Colour(1.f, 1.f, 0.f), LightPosition(100.f, 100.f, 100.f));
 	InstancedRenderContext cart_renders = createInstancedRenderable(cart_geometry, cart_style);
 	
