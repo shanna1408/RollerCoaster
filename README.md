@@ -74,7 +74,7 @@ Using some lookahead value 'h' which is defaulted to '5' but may be altered by t
 
 Now we can find the direction $\hat{n}$, by normalizing $\vec{a}$ to get $\hat{t0}$ and $\vec{b}$ to get $\hat{t1}$ and then evaluating and normalizing the vector $\hat{t1}-\hat{t0}$. Due to the approximations in calculations we still must orthogonalize $\hat{n}$ by removing its parallel component to get $\hat{n}_{\perp}$.
 
-Now, given that curvature k is an inverse of the radius 'r' such that k=1/r, and that r can be found using the inscibed angle theorem to be $c/(2\*length(\hat{t1} \times \hat{t0}))$. Therefore, $k=(2\*length(\hat{t1} \times \hat{t0}))/\vec{c}$.
+Now, given that curvature k is an inverse of the radius 'r' such that k=1/r, and that r can be found using the inscibed angle theorem to be $length(c)/(2\*length(\hat{t1} \times \hat{t0}))$. Therefore, $k=(2\*length(\hat{t1} \times \hat{t0}))/length(c)$.
 
 As all the necessary components to calculate the centripetal acceleration have now been obtained, we are able to evaluate the centripetal acceleration. Finally, we can calculate the normal vector $\vec{N}$ by removing the orthogonalized gravity vector $\vec{g}_{\perp}$ from the acceleration, and normalizing the result.
 
