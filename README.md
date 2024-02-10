@@ -90,7 +90,7 @@ M=
 \end{bmatrix}
 ,
 $$
-
+ 
 which is used to define the position and orientation of the cart.
 
 To place the track pieces, we instead divide the curve into 1000 segments and step through the segments, doing the above calculations at each point to determine the position and orientation of each track piece.
