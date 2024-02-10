@@ -78,7 +78,7 @@ Now, given that curvature k is an inverse of the radius 'r' such that k=1/r, and
 
 As all the necessary components to calculate the centripetal acceleration have now been obtained, we are able to evaluate the centripetal acceleration. Finally, we can calculate the normal vector $\vec{N}$ by removing the orthogonalized gravity vector $\vec{g}_{\perp}$ from the acceleration, and normalizing the result.
 
-Now, we have the normal vector $\hat{N}$ and the tangent vector $\hat{T}$ at the cart's position; all that's left is to calculate the binormal vector $\hat{B}$, which evaluates to $\hat{N}$ \times $\hat{T}$. Using these three vectors and the position $P_0$ on the curve, we can produce a four dimensial matrix
+Now, we have the normal vector $\hat{N}$ and the tangent vector $\hat{T}$ at the cart's position; all that's left is to calculate the binormal vector $\hat{B}$, which evaluates to $\hat{N} \times \hat{T}$. Using these three vectors and the position $P_0$ on the curve, we can produce a four dimensial matrix
 
 $$
 M=
