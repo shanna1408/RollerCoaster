@@ -8,12 +8,13 @@
 #include "curve_file_io.hpp"
 #include "hermite_curve.hpp"
 #include "speed_profile.hpp"
-#include <ctime>
-
+#include "frenet_frame.hpp"
 
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/transform.hpp>
+#include <glm/gtx/string_cast.hpp>
 
+using namespace std;
 using namespace glm;
 using namespace giv;
 using namespace giv::io;
@@ -81,16 +82,14 @@ int main(void) {
 
 	//To load the arc length parameterized curve (only worth part marks so only do this if you need to):
 	// curve = modelling::readHermiteCurveFromFile("../models/roller_coaster_1_ALP.txt").value();
-	curve = modelling::readHermiteCurveFrom_OBJ_File("../models/roller_coaster_2.obj").value();
+	curve = modelling::readHermiteCurveFrom_OBJ_File("../models/roller_coaster_1.obj").value();
 
 	// ALP table
-	float du = (1.f/10000.f)*(1.f/20.f);
+	float du = (1.f/1000.f)*(1.f/20.f);
 	float ds = curve.arcLength(du) / 1000;
 	modelling::ArcLengthTable table = calculateArcLengthTable(curve, ds, du);
-
 	// Initialize speed profile
 	modelling::SpeedProfile speed(table.getH(), table.getTopS(), table.length());
-	std::cout << "Highest H:" << speed.getH() << std::endl;
 
 	// Control points frame Geometry
 	PolyLine cp_geometry = curve.controlPointFrameGeometry();
@@ -102,18 +101,26 @@ int main(void) {
 	GL_Line cp_t_style = GL_Line(Width(25.), Colour(1.0, 0.0, 0.3));
 	RenderContext cp_t_render = createRenderable(cp_t_geometry, cp_t_style);
 
-	// geometry for curve
-	PolyLine track_geometry = curve.sampledGeometry(imgui_panel::curveSamples);
-	GL_Line track_style = GL_Line(Width(15.), Colour(0.2, 0.7, 1.0));
-	RenderContext track_render = createRenderable(track_geometry, track_style);
+	// // geometry for curve
+	// PolyLine track_geometry = curve.sampledGeometry(imgui_panel::curveSamples);
+	// GL_Line track_style = GL_Line(Width(15.), Colour(0.2, 0.7, 1.0));
+	// RenderContext track_render = createRenderable(track_geometry, track_style);
 
 	// Cart
 	Mesh cart_geometry = Mesh(Filename("../models/cart.obj"));
 	PhongStyle cart_style = Phong(Colour(1.f, 1.f, 0.f), LightPosition(100.f, 100.f, 100.f));
 	InstancedRenderContext cart_renders = createInstancedRenderable(cart_geometry, cart_style);
 	
+	// Track
+	modelling::FrenetFrame frame(table);
+ 	Mesh track_g = Mesh(Filename("../models/track_piece.obj"));
+    PhongStyle track_s = Phong(Colour(1.f, 1.f, 0.f), LightPosition(100.f, 100.f, 100.f));
+    InstancedRenderContext track_renders = createInstancedRenderable(track_g, track_s);
+
 	size_t cp_index = 0;
-	float s = 0.f;
+
+    float h = imgui_panel::value;
+	float s = 4.5f;
 	float v = speed.getVmin();
 	bool stopped = false;
 	time_t stopped_time;
@@ -124,8 +131,14 @@ int main(void) {
 	// Backspace isnt enabled when the panel is over the window, please move the panel off the window to backspace.
 	//
 	mainloop(std::move(window), [&](float dt /**** Time since last frame ****/) {
+		dt = dt*imgui_panel::speed;
+		
 		if (imgui_panel::resetView)
 			view.camera.reset();
+
+		if (imgui_panel::resetSimulation){
+			s = 4;
+		}
 
 		if (imgui_panel::rereadControlPoints) {
 			// load points (if possible)
@@ -139,19 +152,18 @@ int main(void) {
 
 				cp_geometry = curve.controlPointFrameGeometry();
 				cp_t_geometry = curve.controlPointGeometry();
-				track_geometry = curve.sampledGeometry(imgui_panel::curveSamples);
+				// track_geometry = curve.sampledGeometry(imgui_panel::curveSamples);
 
 				updateRenderable(cp_geometry, cp_style, cp_render);
 				updateRenderable(cp_t_geometry, cp_t_style, cp_t_render);
-				updateRenderable(track_geometry, track_style, track_render);
-
+				// updateRenderable(track_geometry, track_style, track_render);
 				cp_index = 0;
 			}
 		}
 
-		if (imgui_panel::resample) {
-			track_geometry = curve.sampledGeometry(imgui_panel::curveSamples);
-			updateRenderable(track_geometry, track_style, track_render);
+		if (imgui_panel::updateH) {
+			h = imgui_panel::value;
+			frame.renderTrack(curve, track_renders, h);
 		}
 
 		// Simulation
@@ -161,33 +173,38 @@ int main(void) {
 			s = std::fmod((s+(v*dt)), table.length());
 		}
 
-		// Render cart at position u
-		float u = table(s);
-		auto curve_p = curve(u);
-		auto M = scale(translate(mat4f{ 1.f }, curve_p), vec3f{ 0.75 });
-		addInstance(cart_renders, M);
-
-		if (v<0.05 && !stopped) {
-			std::cout << "Stopping cart" << std::endl;
-			v = 0;
-			stopped_time = time(0);
-			std::cout << "stop time: " << stopped_time << std::endl;
-
-			stopped = true;
-		}
-
-		std::cout << "v:" << v << '\n' << std::endl;
-
-		if (stopped){
-			if ((time(0)-stopped_time)>=1.5) {
-				std::cout << "Starting cart" << std::endl;
-				stopped =  false;
-				v = speed.getVmin();
+		// Render carts at position u
+		float s_loop = s;
+		for (int i=0; i<=3; i++) {
+			float u = table(s_loop);
+			auto curve_p = curve(u);
+			auto matrix = frame.getM(curve, table, s_loop, 1, h);
+			auto M = scale(matrix, vec3f{ 0.75 });
+			addInstance(cart_renders, M);
+			if (s_loop < 1.5){
+            	s_loop = table.length()-(1.5-s_loop);
+			} else{
+				s_loop -= 1.5;
 			}
-		} else {
-			v = speed.getSpeed(s, curve_p, v);
-		}
 
+			if (v<0.10 && s<=5 && !stopped) {
+				v = 0;			
+				stopped_time = time(0);
+				cout << "Stop" << endl;
+				stopped = true;
+			}
+
+			if (stopped){
+				if ((difftime(time(0), stopped_time))>=6) {
+					stopped = false;
+					v = speed.getVmin();
+					speed.setDecel(false);
+				}
+			} else {
+				v = speed.getSpeed(s, curve_p, v);
+			}
+		}
+		
 		// render
 		auto color = imgui_panel::clear_color;
 		glClearColor(color.x, color.y, color.z, color.z);
@@ -195,9 +212,9 @@ int main(void) {
 
 		view.projection.updateAspectRatio(window.width(), window.height());
 
-		draw(cp_render, view);
-		draw(cp_t_render, view);
-		draw(track_render, view);
+		frame.renderTrack(curve, track_renders, h);
+		draw(track_renders, view);
+		// draw(track_render, view);
 		draw(cart_renders, view);
 	});
 	return EXIT_SUCCESS;

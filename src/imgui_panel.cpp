@@ -7,9 +7,11 @@ namespace imgui_panel {
 	bool showPanel = true;
 	ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
-	// visualization
-	bool resample = true;
-	int curveSamples = 300;
+	bool updateH = true;
+	int value = 5;
+
+	bool updateSpeed = true;
+	int speed = 1;
 
 	// loading
 	bool rereadControlPoints = false;
@@ -19,6 +21,7 @@ namespace imgui_panel {
 	// animation
 	bool play = false;
 	bool resetView = false;
+	bool resetSimulation = false;
 
 	std::function<void(void)> draw = [](void) {
 		if (showPanel && ImGui::Begin("panel", &showPanel, ImGuiWindowFlags_MenuBar)) {
@@ -36,9 +39,14 @@ namespace imgui_panel {
 				ImGui::ColorEdit3("Clear color", (float*)&clear_color);
 
 			ImGui::Spacing();
-			if (ImGui::CollapsingHeader("Visualization")) {
-				ImGui::SliderInt("Curve Samples", &curveSamples, 5, 1000);
-				resample = ImGui::Button("Resample Curve");
+			if (ImGui::CollapsingHeader("Playback Speed")) {
+				ImGui::SliderInt("Speed", &speed, 1, 5);
+			}
+
+			ImGui::Spacing();
+			if (ImGui::CollapsingHeader("Look Ahead")) {
+				ImGui::SliderInt("Value", &value, 1, 10);
+				updateH = ImGui::Button("Update look ahead");
 			}
 
 			ImGui::Spacing();
@@ -65,6 +73,10 @@ namespace imgui_panel {
 			ImGui::Spacing();
 			ImGui::Separator();
 			resetView = ImGui::Button("Reset view");
+
+			ImGui::Spacing();
+			ImGui::Separator();
+			resetSimulation = ImGui::Button("Reset simulation");
 
 			ImGui::Spacing();
 			ImGui::Separator();

@@ -347,6 +347,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\arc_length_parameterize.hpp" />
     <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\curve_file_io.cpp" />
     <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\curve_file_io.hpp" />
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\frenet_frame.cpp" />
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\frenet_frame.hpp" />
     <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\hermite_curve.cpp" />
     <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\hermite_curve.hpp" />
     <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\imgui_panel.cpp" />

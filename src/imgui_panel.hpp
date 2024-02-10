@@ -12,9 +12,13 @@ namespace imgui_panel {
 extern bool showPanel;
 extern ImVec4 clear_color;
 
-// visualization
-extern bool resample;
-extern int curveSamples;
+// playback speed
+extern bool updateSpeed;
+extern int speed;
+
+// look ahead
+extern bool updateH;
+extern int value;
 
 // loading
 extern bool rereadControlPoints;
@@ -24,6 +28,7 @@ extern std::string controlPointsFilePath;
 // animation
 extern bool play;
 extern bool resetView;
+extern bool resetSimulation;
 
 // lambda function
 extern std::function<void(void)> draw;

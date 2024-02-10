@@ -26,7 +26,7 @@ events:
       Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 2/1/2024 10:24:42 PM.
+      Build started 2/9/2024 5:29:51 PM.
       Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\3.28.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -52,7 +52,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.86
+      Time Elapsed 00:00:01.35
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -80,7 +80,7 @@ events:
       Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 2/1/2024 10:24:44 PM.
+      Build started 2/9/2024 5:29:53 PM.
       Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\3.28.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -106,7 +106,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.57
+      Time Elapsed 00:00:00.80
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -125,8 +125,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-gkk5jr"
-      binary: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-gkk5jr"
+      source: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-u9ogj6"
+      binary: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-u9ogj6"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -134,39 +134,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-gkk5jr'
+        Change Dir: 'C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-u9ogj6'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_ec559.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_2e310.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 2/1/2024 10:24:45 PM.
-        Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkk5jr\\cmTC_ec559.vcxproj" on node 1 (default targets).
+        Build started 2/9/2024 5:29:54 PM.
+        Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u9ogj6\\cmTC_2e310.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_ec559.dir\\Debug\\".
-          Creating directory "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkk5jr\\Debug\\".
-          Creating directory "cmTC_ec559.dir\\Debug\\cmTC_ec559.tlog\\".
+          Creating directory "cmTC_2e310.dir\\Debug\\".
+          Creating directory "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u9ogj6\\Debug\\".
+          Creating directory "cmTC_2e310.dir\\Debug\\cmTC_2e310.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_ec559.dir\\Debug\\cmTC_ec559.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_2e310.dir\\Debug\\cmTC_2e310.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ec559.dir\\Debug\\\\" /Fd"cmTC_ec559.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2e310.dir\\Debug\\\\" /Fd"cmTC_2e310.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30151 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCXXCompilerABI.cpp
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ec559.dir\\Debug\\\\" /Fd"cmTC_ec559.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2e310.dir\\Debug\\\\" /Fd"cmTC_2e310.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkk5jr\\Debug\\cmTC_ec559.exe" /INCREMENTAL /ILK:"cmTC_ec559.dir\\Debug\\cmTC_ec559.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-gkk5jr/Debug/cmTC_ec559.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-gkk5jr/Debug/cmTC_ec559.lib" /MACHINE:X64  /machine:x64 cmTC_ec559.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_ec559.vcxproj -> C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkk5jr\\Debug\\cmTC_ec559.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u9ogj6\\Debug\\cmTC_2e310.exe" /INCREMENTAL /ILK:"cmTC_2e310.dir\\Debug\\cmTC_2e310.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-u9ogj6/Debug/cmTC_2e310.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-u9ogj6/Debug/cmTC_2e310.lib" /MACHINE:X64  /machine:x64 cmTC_2e310.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_2e310.vcxproj -> C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u9ogj6\\Debug\\cmTC_2e310.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_ec559.dir\\Debug\\cmTC_ec559.tlog\\unsuccessfulbuild".
-          Touching "cmTC_ec559.dir\\Debug\\cmTC_ec559.tlog\\cmTC_ec559.lastbuildstate".
-        Done Building Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkk5jr\\cmTC_ec559.vcxproj" (default targets).
+          Deleting file "cmTC_2e310.dir\\Debug\\cmTC_2e310.tlog\\unsuccessfulbuild".
+          Touching "cmTC_2e310.dir\\Debug\\cmTC_2e310.tlog\\cmTC_2e310.lastbuildstate".
+        Done Building Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u9ogj6\\cmTC_2e310.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.61
+        Time Elapsed 00:00:00.76
         
       exitCode: 0
   -
@@ -178,8 +178,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-i8x4xg"
-      binary: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-i8x4xg"
+      source: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-by73v8"
+      binary: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-by73v8"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -187,39 +187,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-i8x4xg'
+        Change Dir: 'C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-by73v8'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_72f3a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_9b890.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 2/1/2024 10:24:46 PM.
-        Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8x4xg\\cmTC_72f3a.vcxproj" on node 1 (default targets).
+        Build started 2/9/2024 5:29:56 PM.
+        Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by73v8\\cmTC_9b890.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_72f3a.dir\\Debug\\".
-          Creating directory "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8x4xg\\Debug\\".
-          Creating directory "cmTC_72f3a.dir\\Debug\\cmTC_72f3a.tlog\\".
+          Creating directory "cmTC_9b890.dir\\Debug\\".
+          Creating directory "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by73v8\\Debug\\".
+          Creating directory "cmTC_9b890.dir\\Debug\\cmTC_9b890.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_72f3a.dir\\Debug\\cmTC_72f3a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_9b890.dir\\Debug\\cmTC_9b890.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_72f3a.dir\\Debug\\\\" /Fd"cmTC_72f3a.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9b890.dir\\Debug\\\\" /Fd"cmTC_9b890.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30151 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCCompilerABI.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_72f3a.dir\\Debug\\\\" /Fd"cmTC_72f3a.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9b890.dir\\Debug\\\\" /Fd"cmTC_9b890.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8x4xg\\Debug\\cmTC_72f3a.exe" /INCREMENTAL /ILK:"cmTC_72f3a.dir\\Debug\\cmTC_72f3a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-i8x4xg/Debug/cmTC_72f3a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-i8x4xg/Debug/cmTC_72f3a.lib" /MACHINE:X64  /machine:x64 cmTC_72f3a.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_72f3a.vcxproj -> C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8x4xg\\Debug\\cmTC_72f3a.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by73v8\\Debug\\cmTC_9b890.exe" /INCREMENTAL /ILK:"cmTC_9b890.dir\\Debug\\cmTC_9b890.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-by73v8/Debug/cmTC_9b890.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-by73v8/Debug/cmTC_9b890.lib" /MACHINE:X64  /machine:x64 cmTC_9b890.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_9b890.vcxproj -> C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by73v8\\Debug\\cmTC_9b890.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_72f3a.dir\\Debug\\cmTC_72f3a.tlog\\unsuccessfulbuild".
-          Touching "cmTC_72f3a.dir\\Debug\\cmTC_72f3a.tlog\\cmTC_72f3a.lastbuildstate".
-        Done Building Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8x4xg\\cmTC_72f3a.vcxproj" (default targets).
+          Deleting file "cmTC_9b890.dir\\Debug\\cmTC_9b890.tlog\\unsuccessfulbuild".
+          Touching "cmTC_9b890.dir\\Debug\\cmTC_9b890.tlog\\cmTC_9b890.lastbuildstate".
+        Done Building Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by73v8\\cmTC_9b890.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.61
+        Time Elapsed 00:00:00.86
         
       exitCode: 0
   -
@@ -233,8 +233,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-to0nff"
-      binary: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-to0nff"
+      source: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-fnw2xu"
+      binary: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-fnw2xu"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -244,39 +244,39 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-to0nff'
+        Change Dir: 'C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-fnw2xu'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_26230.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_97c46.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 2/1/2024 10:24:47 PM.
-        Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-to0nff\\cmTC_26230.vcxproj" on node 1 (default targets).
+        Build started 2/9/2024 5:29:57 PM.
+        Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fnw2xu\\cmTC_97c46.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_26230.dir\\Debug\\".
-          Creating directory "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-to0nff\\Debug\\".
-          Creating directory "cmTC_26230.dir\\Debug\\cmTC_26230.tlog\\".
+          Creating directory "cmTC_97c46.dir\\Debug\\".
+          Creating directory "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fnw2xu\\Debug\\".
+          Creating directory "cmTC_97c46.dir\\Debug\\cmTC_97c46.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_26230.dir\\Debug\\cmTC_26230.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_97c46.dir\\Debug\\cmTC_97c46.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_26230.dir\\Debug\\\\" /Fd"cmTC_26230.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-to0nff\\src.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_97c46.dir\\Debug\\\\" /Fd"cmTC_97c46.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fnw2xu\\src.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30151 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_26230.dir\\Debug\\\\" /Fd"cmTC_26230.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-to0nff\\src.c"
           src.c
-        C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-to0nff\\src.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-to0nff\\cmTC_26230.vcxproj]
-        Done Building Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-to0nff\\cmTC_26230.vcxproj" (default targets) -- FAILED.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_97c46.dir\\Debug\\\\" /Fd"cmTC_97c46.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fnw2xu\\src.c"
+        C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fnw2xu\\src.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fnw2xu\\cmTC_97c46.vcxproj]
+        Done Building Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fnw2xu\\cmTC_97c46.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-to0nff\\cmTC_26230.vcxproj" (default target) (1) ->
+        "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fnw2xu\\cmTC_97c46.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-to0nff\\src.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-to0nff\\cmTC_26230.vcxproj]
+          C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fnw2xu\\src.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fnw2xu\\cmTC_97c46.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.39
+        Time Elapsed 00:00:00.49
         
       exitCode: 1
   -
@@ -289,8 +289,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-lizpuh"
-      binary: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-lizpuh"
+      source: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-f9rb7v"
+      binary: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-f9rb7v"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -300,41 +300,41 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-lizpuh'
+        Change Dir: 'C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-f9rb7v'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_c5924.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_253e3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 2/1/2024 10:24:48 PM.
-        Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lizpuh\\cmTC_c5924.vcxproj" on node 1 (default targets).
+        Build started 2/9/2024 5:29:58 PM.
+        Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f9rb7v\\cmTC_253e3.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_c5924.dir\\Debug\\".
-          Creating directory "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lizpuh\\Debug\\".
-          Creating directory "cmTC_c5924.dir\\Debug\\cmTC_c5924.tlog\\".
+          Creating directory "cmTC_253e3.dir\\Debug\\".
+          Creating directory "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f9rb7v\\Debug\\".
+          Creating directory "cmTC_253e3.dir\\Debug\\cmTC_253e3.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_c5924.dir\\Debug\\cmTC_c5924.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_253e3.dir\\Debug\\cmTC_253e3.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c5924.dir\\Debug\\\\" /Fd"cmTC_c5924.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lizpuh\\CheckFunctionExists.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_253e3.dir\\Debug\\\\" /Fd"cmTC_253e3.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f9rb7v\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30151 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CheckFunctionExists.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c5924.dir\\Debug\\\\" /Fd"cmTC_c5924.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lizpuh\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_253e3.dir\\Debug\\\\" /Fd"cmTC_253e3.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f9rb7v\\CheckFunctionExists.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lizpuh\\Debug\\cmTC_c5924.exe" /INCREMENTAL /ILK:"cmTC_c5924.dir\\Debug\\cmTC_c5924.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-lizpuh/Debug/cmTC_c5924.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-lizpuh/Debug/cmTC_c5924.lib" /MACHINE:X64  /machine:x64 cmTC_c5924.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lizpuh\\cmTC_c5924.vcxproj]
-        Done Building Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lizpuh\\cmTC_c5924.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f9rb7v\\Debug\\cmTC_253e3.exe" /INCREMENTAL /ILK:"cmTC_253e3.dir\\Debug\\cmTC_253e3.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-f9rb7v/Debug/cmTC_253e3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-f9rb7v/Debug/cmTC_253e3.lib" /MACHINE:X64  /machine:x64 cmTC_253e3.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f9rb7v\\cmTC_253e3.vcxproj]
+        Done Building Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f9rb7v\\cmTC_253e3.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lizpuh\\cmTC_c5924.vcxproj" (default target) (1) ->
+        "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f9rb7v\\cmTC_253e3.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lizpuh\\cmTC_c5924.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f9rb7v\\cmTC_253e3.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.64
+        Time Elapsed 00:00:00.61
         
       exitCode: 1
   -
@@ -347,8 +347,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-nrmvx4"
-      binary: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-nrmvx4"
+      source: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-c9cqq2"
+      binary: "C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-c9cqq2"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -358,41 +358,41 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-nrmvx4'
+        Change Dir: 'C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-c9cqq2'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_19917.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/MSBuild/Current/Bin/MSBuild.exe" cmTC_669f1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 2/1/2024 10:24:49 PM.
-        Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nrmvx4\\cmTC_19917.vcxproj" on node 1 (default targets).
+        Build started 2/9/2024 5:29:59 PM.
+        Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c9cqq2\\cmTC_669f1.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_19917.dir\\Debug\\".
-          Creating directory "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nrmvx4\\Debug\\".
-          Creating directory "cmTC_19917.dir\\Debug\\cmTC_19917.tlog\\".
+          Creating directory "cmTC_669f1.dir\\Debug\\".
+          Creating directory "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c9cqq2\\Debug\\".
+          Creating directory "cmTC_669f1.dir\\Debug\\cmTC_669f1.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_19917.dir\\Debug\\cmTC_19917.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_669f1.dir\\Debug\\cmTC_669f1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_19917.dir\\Debug\\\\" /Fd"cmTC_19917.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nrmvx4\\CheckFunctionExists.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_669f1.dir\\Debug\\\\" /Fd"cmTC_669f1.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c9cqq2\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30151 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CheckFunctionExists.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_19917.dir\\Debug\\\\" /Fd"cmTC_19917.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nrmvx4\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_669f1.dir\\Debug\\\\" /Fd"cmTC_669f1.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c9cqq2\\CheckFunctionExists.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nrmvx4\\Debug\\cmTC_19917.exe" /INCREMENTAL /ILK:"cmTC_19917.dir\\Debug\\cmTC_19917.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-nrmvx4/Debug/cmTC_19917.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-nrmvx4/Debug/cmTC_19917.lib" /MACHINE:X64  /machine:x64 cmTC_19917.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nrmvx4\\cmTC_19917.vcxproj]
-        Done Building Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nrmvx4\\cmTC_19917.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c9cqq2\\Debug\\cmTC_669f1.exe" /INCREMENTAL /ILK:"cmTC_669f1.dir\\Debug\\cmTC_669f1.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-c9cqq2/Debug/cmTC_669f1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/princ/OneDrive/Desktop/School/CPSC 687/Assignment 1 - Boilerplate/build/CMakeFiles/CMakeScratch/TryCompile-c9cqq2/Debug/cmTC_669f1.lib" /MACHINE:X64  /machine:x64 cmTC_669f1.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c9cqq2\\cmTC_669f1.vcxproj]
+        Done Building Project "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c9cqq2\\cmTC_669f1.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nrmvx4\\cmTC_19917.vcxproj" (default target) (1) ->
+        "C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c9cqq2\\cmTC_669f1.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nrmvx4\\cmTC_19917.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\princ\\OneDrive\\Desktop\\School\\CPSC 687\\Assignment 1 - Boilerplate\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c9cqq2\\cmTC_669f1.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.43
+        Time Elapsed 00:00:00.63
         
       exitCode: 1
 ...

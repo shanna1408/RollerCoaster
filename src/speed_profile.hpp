@@ -1,5 +1,7 @@
 #pragma once
 
+#include "hermite_curve.hpp"
+#include "arc_length_parameterize.hpp"
 #include <glm/glm.hpp>
 #include <vector>
 
@@ -13,6 +15,8 @@ namespace modelling {
             float getVmin() const;
             float getSpeed(float s, glm::vec3 curve_p, float v);
 
+            void setDecel(bool val);
+            
         private:
             float H, arcLength, topS, vdec;
             float g = 9.81f;

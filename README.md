@@ -17,4 +17,5 @@ Compilation
 
 ## How to Run
 
-    build/simple
+    ***Click a1_base.exe inside the Debug/build folder.
+

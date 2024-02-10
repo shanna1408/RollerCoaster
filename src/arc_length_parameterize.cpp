@@ -51,22 +51,22 @@ namespace modelling {
 	// Get exact u value using interpolation from nearest indexed s's
 	float ArcLengthTable::operator()(float s) const {
 		float start = nearestValueTo(s);
-		int i = indexAt(s)+1;
 		float s_start = indexAt(s) * m_delta_s;
 		
 		float end, s_end;
-		if (i >= length()){
-			end = m_values[0];
-			s_end = 0;
-		} else {
+		if (indexAt(s)+1 >= m_values.size()){
+			start = nearestValueTo(0);
+			s_start = indexAt(0) * m_delta_s;
+			end = m_values[1];
+			s_end = m_delta_s;
+		} else { 
+			int i = indexAt(s)+1;
 			end = m_values[i];
-			s_end = (indexAt(s) + 1) * m_delta_s;
+			s_end = i * m_delta_s;
 		}
-
 
 		float t = (s-s_start)/(s_end-s_start);
 		
-		std::cout << "start: " << start << " end: " << end << " t: " << t << std::endl;
 		return start * (1.f - t) + end * (t);
 	}
 	//***** ******** ***** *****//
@@ -94,7 +94,7 @@ namespace modelling {
 		table.addNext(0);
 		float dS_accum = 0;
 		float u = 0;
-		int i = 0;
+		int i = 1;
 		//Loop here to fill table
 		while (u <= 1) {
 			if (curve.position(u)[1] > H){

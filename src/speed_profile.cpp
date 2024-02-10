@@ -12,17 +12,18 @@ namespace modelling {
 
     float SpeedProfile::getVmin() const { return vmin; }
 
+    void SpeedProfile::setDecel(bool val){
+        decel = val;
+    }
+
     float SpeedProfile::liftingPhase() const { 
-        std::cout << "lifting" << std::endl;
         return vmin; }
 
     float SpeedProfile::freefallPhase(float s, glm::vec3 curve_p) const { 
-        std::cout << "freefall" << std::endl;
         return sqrt(2.f*g*(H-curve_p[1]));
     }
 
     float SpeedProfile::deceleration(float s, float vdec) const {
-        std::cout << "deceleration" << std::endl;
         float ddec = arcLength - s;
         float Ldec = arcLength * 0.05;
         float v = (vdec - 0) * (ddec / Ldec);
@@ -36,7 +37,7 @@ namespace modelling {
                 decel = true;
                 vdec = v;
             } 
-            return deceleration(s, vdec);
+            return std::max(0.05f, deceleration(s, vdec));
         }
 
         decel = false;
@@ -45,13 +46,8 @@ namespace modelling {
             return liftingPhase();
         // Otherwise, enter freefall
         } else {
-            float v = freefallPhase(s, curve_p);
             // Set lower bound on freefall value at vmin
-            if (v < vmin) {
-                return vmin;
-            } else {
-                return v;
-            }
+            return std::max(freefallPhase(s, curve_p), vmin);
         }
     }
 }

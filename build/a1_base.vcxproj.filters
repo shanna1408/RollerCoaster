@@ -43,6 +43,9 @@
     <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\curve_file_io.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\frenet_frame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\hermite_curve.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -103,6 +106,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\curve_file_io.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\frenet_frame.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\princ\OneDrive\Desktop\School\CPSC 687\Assignment 1 - Boilerplate\src\hermite_curve.hpp">
