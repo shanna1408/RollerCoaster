@@ -81,15 +81,13 @@ As all the necessary components to calculate the centripetal acceleration have n
 Now, we have the normal vector $\hat{N}$ and the tangent vector $\hat{T}$ at the cart's position; all that's left is to calculate the binormal vector $\hat{B}$, which evaluates to $\hat{N} \times \hat{T}$. Using these three vectors and the position $P_0$ on the curve, we can produce a four dimensial matrix
 
 $$
-\begin{aligned}
 M=
 \begin{bmatrix}
-  \hat{B}_x & \hat{N}_x & \hat{T}_x & P_{0,x}\\
-  \hat{B}_y & \hat{N}_y & \hat{T}_y & P_{0,y}\\
-  \hat{B}_z & \hat{N}_z & \hat{T}_z & P_{0,z}\\
+  \hat{B_x} & \hat{N_x} & \hat{T_x} & P_{0,x}\\
+  \hat{B_y} & \hat{N_y} & \hat{T_y} & P_{0,y}\\
+  \hat{B_z} & \hat{N_z} & \hat{T_z} & P_{0,z}\\
   0 & 0 & 0 & 1\\
 \end{bmatrix}
-\end{aligned}
 ,
 $$
  
