@@ -5,19 +5,19 @@
 
 * To run this program, click the a1_base.exe inside of the build/Debug folder (Compiled for Windows 11 using Visual Studio C++ compiler).
 
-* To start the animation, click 'Play'. Once the animation has started, a 'Pause' option will appear.
+* To start the animation, click `Play`. Once the animation has started, a `Pause` option will appear.
 
-* Use the 'Background Colour' selector to change the background colour of the animation.
+* Use the `Background Colour` selector to change the background colour of the animation.
 
-* The 'Playback Speed' option allows you to control the speed at which the animation plays. The default setting is 1 which is also the lowest setting, and the highest option is 10.
+* The `Playback Speed` option allows you to control the speed at which the animation plays. The default setting is 1 which is also the lowest setting, and the highest option is 10.
 
-* The 'Look Ahead' slider allows you to configure the wideness of the curve samples at any given point. The smallest option 1 is, and the largest is 10. The default setting is at 5.
+* The `Look Ahead` slider allows you to configure the wideness of the curve samples at any given point. The smallest option 1 is, and the largest is 10. The default setting is at 5.
 
 * Reset view will return the camera to it's original position.
 
 * Reset simulation will move the cart back to it's starting position.
 
-* The only model available is "roller_coaster_1.obj", which is loaded by default.
+* The only model available is `"roller_coaster_1.obj"`, which is loaded by default.
 
 ## Hermite Curve
 
@@ -63,7 +63,7 @@ Now that we have this value, there were one of three cases:
 
 1. The lifting phase, which I defined as any point between the starting position on the track (s=0) to the highest point of the track (s=topS). For this portion, the cart maintains a slow constant speed called the chain speed.
 
-2. The freefall phase, which is any point after the highest point and before the decelaration phase(which encompasses the last 5% of the track.) In the freefall phase, the speed is calculated using the formula $$\sqrt{2g(H-h)}$$ where 'h' is the current height. Because this calculation can sometimes yield very small values, in particular when the difference between H and h is small, I set my algorithm to select the maximum value between this speed and the chain speed.
+2. The freefall phase, which is any point after the highest point and before the decelaration phase(which encompasses the last 5% of the track.) In the freefall phase, the speed is calculated using the formula $\sqrt{2g(H-h)}$ where 'h' is the current height. Because this calculation can sometimes yield very small values, in particular when the difference between H and h is small, I set my algorithm to select the maximum value between this speed and the chain speed.
 
 3. Finally, we have the deceleration phase. This is where our cart smoothly slows down and stops, before taking off again. In order to calculate the speed at this stage, I used the formula (vdec - 0) * (ddec / Ldec), where vdec is the speed upon entering the deceleration phase, Ldec is the full length of the deceleration phase, and ddec is the remaining length of the deceleration phase. When the cart reaches a stop, a timer counts to three seconds (Which may not be enough for people to actually leave and eneter the cart, but it's enough to get the point!), and then the speed is reset to the chain speed and we loop back to the lifting phase.
 
