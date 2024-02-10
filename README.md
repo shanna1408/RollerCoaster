@@ -68,26 +68,28 @@ Now that we have this value, there were one of three cases:
 3. Finally, we have the deceleration phase. This is where our cart smoothly slows down and stops, before taking off again. In order to calculate the speed at this stage, I used the formula (vdec - 0) * (ddec / Ldec), where vdec is the speed upon entering the deceleration phase, Ldec is the full length of the deceleration phase, and ddec is the remaining length of the deceleration phase. When the cart reaches a stop, a timer counts to three seconds (Which may not be enough for people to actually leave and eneter the cart, but it's enough to get the point!), and then the speed is reset to the chain speed and we loop back to the lifting phase.
 
 # Framing the curve
-In order to get the direction of the curve to properly place the track pieces and the cart, I used a frenet frame. Essentially, we want to calculate the centripetal acceleration at each point along the curve, which we can later use to calculate the normal vector at the point. We can use the equation \vec{a}_{\perp, ALP}=k\hat{n}, where k is the curvature of the oscillating circle at the point and \hat{n} is the direction of the acceleration.
+In order to get the direction of the curve to properly place the track pieces and the cart, I used a frenet frame. Essentially, we want to calculate the centripetal acceleration at each point along the curve, which we can later use to calculate the normal vector at the point. We can use the equation $\vec{a}_{\perp, ALP}=k\hat{n}$, where k is the curvature of the oscillating circle at the point and \hat{n} is the direction of the acceleration.
 
-Using some lookahead value 'h' which is defaulted to '5' but may be altered by the user to any value between 1 and 10, we first calculated the vectors from our position 'x' taken from the ALP table at a distance s, and the position h distance ahead of and behind x, dubbed '\vec{a}' and '\vec{b}'. Now, we are able to calculate a third vector '\vec{c}' by taking the difference of those two vectors and normalizing the result, which gives us tangent line '\hat{T}' at the cart's current position.
+Using some lookahead value 'h' which is defaulted to '5' but may be altered by the user to any value between 1 and 10, we first calculated the vectors from our position 'x' taken from the ALP table at a distance s, and the position h distance ahead of and behind x, dubbed '$\vec{a}$' and '$\vec{b}$'. Now, we are able to calculate a third vector '$\vec{c}$' by taking the difference of those two vectors and normalizing the result, which gives us tangent line '\hat{T}' at the cart's current position.
 
-Now we can find the direction \hat{n}, by normalizing \vec{a} to get '\hat{t0}' and \vec{b} to get '\hat{t1}' and then evaluating and normalizing the vector \hat{t1}-\hat{t0}. Due to the approximations in calculations we still must orthogonalize \hat{n} by removing its parallel component to get \hat{n_{\perp}}.
+Now we can find the direction $\hat{n}$, by normalizing $\vec{a}$ to get '$\hat{t0}$' and $\vec{b}$ to get '$\hat{t1}$' and then evaluating and normalizing the vector $\hat{t1}-\hat{t0}$. Due to the approximations in calculations we still must orthogonalize $\hat{n}$ by removing its parallel component to get $\hat{n_{\perp}}$.
 
-Now, given that curvature k is an inverse of the radius 'r' such that k=1/r, and that r can be found using the inscibed angle theorem to be c/(2\*length(\hat{t1} cross \hat{t0})). Therefore, k=(2\*length(\hat{t1} cross \hat{t0}))/\vec{c}.
+Now, given that curvature k is an inverse of the radius 'r' such that k=1/r, and that r can be found using the inscibed angle theorem to be $c/(2\*length(\hat{t1} cross \hat{t0}))$. Therefore, $k=(2\*length(\hat{t1} cross \hat{t0}))/\vec{c}$.
 
-As all the necessary components to calculate the centripetal acceleration have now been obtained, we are able to evaluate the centripetal acceleration. Finally, we can calculate the normal vector '\vec{N}' by removing the orthogonalized gravity vector \vec{g_{\perp}} from the acceleration, and normalizing the result.
+As all the necessary components to calculate the centripetal acceleration have now been obtained, we are able to evaluate the centripetal acceleration. Finally, we can calculate the normal vector '$\vec{N}$' by removing the orthogonalized gravity vector $\vec{g_{\perp}}$ from the acceleration, and normalizing the result.
 
-Now, we have the normal vector '\hat{N}' and the tangent vector '\hat{T}' at the cart's position; all that's left is to calculate the binormal vector \hat{B}, which evaluates to \hat{N} cross \hat{T}. Using these three vectors and the position x on the curve, we can produce a four dimensial matrix M=
+Now, we have the normal vector '$\hat{N}$' and the tangent vector '$\hat{T}$' at the cart's position; all that's left is to calculate the binormal vector $\hat{B}$, which evaluates to $\hat{N}$ cross $\hat{T}$. Using these three vectors and the position x on the curve, we can produce a four dimensial matrix
 $$
+M=
 \begin{bmatrix}
   \hat{B_x} & \hat{N_x} & \hat{T_x} & P_{0,x}\\
   \hat{B_y} & \hat{N_y} & \hat{T_y} & P_{0,y}\\
   \hat{B_z} & \hat{N_z} & \hat{T_z} & P_{0,z}\\
   0 & 0 & 0 & 1\\
 \end{bmatrix}
+,
 $$
-, which is used to define the position and orientation of the cart.
+which is used to define the position and orientation of the cart.
 
 To place the track pieces, we instead divide the curve into 1000 segments and step through the segments, doing the above calculations at each point to determine the position and orientation of each track piece.
 
