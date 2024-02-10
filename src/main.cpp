@@ -195,7 +195,7 @@ int main(void) {
 			}
 
 			if (stopped){
-				if ((difftime(time(0), stopped_time))>=6) {
+				if ((difftime(time(0), stopped_time))>=3) {
 					stopped = false;
 					v = speed.getVmin();
 					speed.setDecel(false);

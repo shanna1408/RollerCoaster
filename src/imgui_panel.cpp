@@ -40,7 +40,7 @@ namespace imgui_panel {
 
 			ImGui::Spacing();
 			if (ImGui::CollapsingHeader("Playback Speed")) {
-				ImGui::SliderInt("Speed", &speed, 1, 5);
+				ImGui::SliderInt("Speed", &speed, 1, 10);
 			}
 
 			ImGui::Spacing();
@@ -49,21 +49,21 @@ namespace imgui_panel {
 				updateH = ImGui::Button("Update look ahead");
 			}
 
-			ImGui::Spacing();
-			if (ImGui::CollapsingHeader("Loading control points")) {
-				static std::array<char, 64> buffer;
-				ImGui::InputText("(OBJ) file", buffer.data(), buffer.size());
+			// ImGui::Spacing();
+			// if (ImGui::CollapsingHeader("Loading control points")) {
+			// 	static std::array<char, 64> buffer;
+			// 	ImGui::InputText("(OBJ) file", buffer.data(), buffer.size());
 
-				rereadControlPoints = ImGui::Button("Load");
-				ImGui::SameLine();
-				clearControlPointsFilePath = ImGui::Button("Clear");
+			// 	rereadControlPoints = ImGui::Button("Load");
+			// 	ImGui::SameLine();
+			// 	clearControlPointsFilePath = ImGui::Button("Clear");
 
-				if (rereadControlPoints) controlPointsFilePath = buffer.data();
-				if (clearControlPointsFilePath) {
-					buffer = std::array<char, 64>();
-					clearControlPointsFilePath = false;
-				}
-			}
+			// 	if (rereadControlPoints) controlPointsFilePath = buffer.data();
+			// 	if (clearControlPointsFilePath) {
+			// 		buffer = std::array<char, 64>();
+			// 		clearControlPointsFilePath = false;
+			// 	}
+			// }
 
 			ImGui::Spacing();
 			ImGui::Separator();

@@ -42,7 +42,7 @@ namespace modelling {
 
         decel = false;
         // If current position is before highest point of curve, use constant v
-        if (s <= topS) {
+        if (s >= 0 && s <= topS) {
             return liftingPhase();
         // Otherwise, enter freefall
         } else {

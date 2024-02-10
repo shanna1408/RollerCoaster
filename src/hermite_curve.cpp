@@ -115,8 +115,6 @@ namespace modelling {
 		const glm::vec3& T_A = m_cps[cp_A].tangent;
 		const glm::vec3& P_B = m_cps[cp_B].position;
 		const glm::vec3& T_B = m_cps[cp_B].tangent;
-
-		// Currently LERP, need to change
 		const glm::vec3& p_i = P_A * ((2.f * u*u*u) - (3.f * u*u) + 1)
 							+ T_A * ((u*u*u) - (2*u*u) + u)
 							+ P_B * ((-2.f * u*u*u) + (3.f * u*u))
