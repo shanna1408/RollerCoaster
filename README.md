@@ -31,7 +31,7 @@ Now given some u between 0 and 1, we can interpolate between the control points 
 
 ## Arc Length Paramaterization
 
-In order to ensure that we are stepping evenly along the curve for accurate movement at a constant speed, we must now arc length parameterize the curve. For this, we pick two very small values delta s and delta u, and use the following algorithm to create a table full of arc length paramterized values for easy access:
+In order to ensure that we are stepping evenly along the curve for accurate movement at a constant speed, we must now parameterize the curve by its arc length. For this, we pick two very small values delta s and delta u, and use the following algorithm to create a table full of arc length paramterized values for easy access:
 
 ```c++
 float L_C = length of the curve;
