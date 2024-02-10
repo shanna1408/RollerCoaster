@@ -23,10 +23,9 @@
 
 The first part of this solution was evaluating a cubic hermite curve. In order to achieve this, we can derive and simplify our curve equations into a singular expression which allows us to find an exact point in between two control points, using those points and their tangents. The expression is as follows:
 
-*C(u_i) = p_i(2u_i^3 - 3u_i^2 + 1) +*
-        *t_i(u_i^3 - 2u_i^2 + u_i) +*
-        *p_(i+1)(-2u_i^3 + 3u_i^2) +*
-        *t_(i+1)(u_i^3-u_i^2)*
+$$
+C(u_i) = p_i(2u_i^3 - 3u_i^2 + 1) + t_i(u_i^3 - 2u_i^2 + u_i) + p_(i+1)(-2u_i^3 + 3u_i^2) + t_(i+1)(u_i^3-u_i^2)
+$$
 
 Now given some u between 0 and 1, we can interpolate between the control points using the expression and find an exact position on the curve.
 
